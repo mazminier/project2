@@ -6,10 +6,12 @@ body {
 	color:#fff;
 	background-color:#0b2027; /*dark jungle green*/
 }
+
 html {
 	width:100%;
 	height:100%
 }
+
 h1 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
@@ -17,6 +19,7 @@ h1 {
 	letter-spacing:10px;
 	text-transform:uppercase
 }
+
 h2 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
@@ -24,6 +27,7 @@ h2 {
 	letter-spacing:10px;
 	text-transform:uppercase
 }
+
 h3 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
@@ -31,6 +35,7 @@ h3 {
 	letter-spacing:1px;
 	text-transform:lowercase
 }
+
 h4 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
@@ -38,6 +43,7 @@ h4 {
 	letter-spacing:1px;
 	text-transform:lowercase
 }
+
 h5 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
@@ -45,6 +51,7 @@ h5 {
 	letter-spacing:1px;
 	text-transform:lowercase
 }
+
 h6 {
 	font-size:12px;
 	line-height:1.5;
@@ -55,60 +62,61 @@ p {
 	line-height:1.5;
 	margin:0 0 25px
 }
-@media (min-width:768px){
-	p{
-		font-size:16px;
-		line-height:1.6;
-		margin:0 0 25px
-	}
-}
+
 a {
 	-moz-transition:all .2s ease-in-out;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	color:#fff   
 }
+
 a:focus,a:hover {
 	text-decoration:none;
 	color:#E63946
 }
+
 #mainNav{
 	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 	font-size:12px;
 	font-weight:500;
 	margin-bottom:0;
-	color:#e0ff4f;  		/*maximum green yellow*/
+	color:#e0ff4f;  			/*maximum green yellow*/
 	text-transform:uppercase;
 	background-color:rgb(255,255,255,.8)
 }
-#mainNav .navbar-toggler{
+/*#mainNav .navbar-toggler{
 	font-size:12px;
-	/*padding:10px;*/
-	color:#e0ff4f; 			/*maximum green yellow*/
-}
+	padding:10px;
+	color:#e0ff4f;			
+}*/
+
 #mainNav .navbar-brand{
 	font-weight:200
 }
+
 #mainNav a{
-	color:#e0ff4f;  		/*maximum green yellow*/
+	color:#e0ff4f;  			/*maximum green yellow*/
 }
+
 #mainNav .navbar-nav .nav-item{
 	-moz-transition:background .3s ease-in-out;
 	-webkit-transition:background .3s ease-in-out;	
 	transition:background .3s ease-in-out
 }
+
 #mainNav .navbar-nav .nav-item:hover{
-	color:fade(white,80%);
+	color:fade(white,50%);
 	outline:0;
 	background-color:transparent
 }
+
 #mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
 	/*color:fade(white,80%);*/
 	/*outline:0;*/
 	background-color:transparent
 }
 
-@media (min-width:992px){
+/*@media (min-width:992px){
 	#mainNav{
 		padding-top:20px;
 		padding-bottom:20px;
@@ -129,7 +137,7 @@ a:focus,a:hover {
 	#mainNav .nav-link.active:hover{
 		color:#E63946
 	}
-}  
+}*/
 
 .masthead{
 	display:table;
@@ -150,12 +158,13 @@ a:focus,a:hover {
 	vertical-align:middle
 }
 .masthead .intro-body .brand-heading{
-	font-size:20px    /*title*/
+	font-size:50px    /*title*/
 }
 .masthead .intro-body .intro-text{
-	font-size:14px
+	font-size:18px
 }
-@media (min-width:768px){
+
+/* @media (min-width:768px){
 		.masthead{
 			height:100%;
 			padding:0
@@ -166,7 +175,8 @@ a:focus,a:hover {
 	.masthead .intro-body .intro-text{
 		font-size:18px
 	} 
-} 
+} */
+
 .btn-circle{
 	font-size:20px;
 	width:55px;
@@ -181,6 +191,7 @@ a:focus,a:hover {
 	border-radius:100%!important;
 	background:0 0
 }
+
 .btn-circle:focus,.btn-circle:hover{
 	color:#fff;
 	outline:0;
@@ -201,6 +212,7 @@ a:focus,a:hover {
 	-o-background-size:cover;
 	background-size:cover
 }
+
 .topic-section{
 	height:auto;
 	color:#fff;
@@ -240,25 +252,29 @@ a:focus,a:hover {
 	text-transform:lowercase;
 	border-radius:0
 }
+
 .btn-default{
 	color:#fff;   
 	/*border:1px solid #fff;*/
 	background-color:transparent
 }
+
 .btn-default:focus,.btn-default:hover{
 	color:#E63946;   /*red*/
 	/*border:1px solid #fff;*/
 	outline:0;
 	background-color:transparent
 }
+
 ul.banner-social-buttons{
 	margin-top:0
 }
+
 /* @media (max-width:1199px){
 	ul.banner-social-buttons{
 		margin-top:15px
 	}
-}
+} 
 @media (max-width:767px){
 	ul.banner-social-buttons li{
 		display:block;
@@ -269,26 +285,32 @@ ul.banner-social-buttons{
 		margin-bottom:0
 	}
 } */
+
 footer{
 	padding:50px 0
 }
+
 footer p{
 	font-size:14px;
 	margin:0
 }
+
 ::-moz-selection{
 	background:#fcfcfc;
 	background:rgba(255,255,255,.2);
 	text-shadow:none
 }
+
 ::selection{
 	background:#fcfcfc;
 	background:rgba(255,255,255,.2);
 	text-shadow:none
 }
+
 img::selection{
 	background:0 0
 }
+
 img::-moz-selection{
 	background:0 0
 }
