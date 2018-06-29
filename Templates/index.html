@@ -268,7 +268,7 @@
 
   	<!-- Plotly & Crashes.js -->
   	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  	<script src="{{ url_for('static', filename='test.js') }}"></script>
+  	<script src="{{ url_for('static', filename='app.js') }}"></script>
   	
 	<!-- Chart.js Import -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
@@ -292,7 +292,7 @@
 			  labels: laws,
 			  datasets: [
 				{
-				  label: "Fatality Rate",
+				  label: "",
 				  backgroundColor: ["#37a2eb", "#fe6383", "#4ac1c0", "#ffcd56"],
 				  data: fatalities
 				}
@@ -301,7 +301,7 @@
 			options: {
 			  title: {
 				display: true,
-				text: 'Fatality Rates by Laws on Sunday'
+				text: ''
 			  }
 			}
 		})
