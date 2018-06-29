@@ -14,7 +14,7 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
 	<!-- Leaflet CSS & js -->
-  	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+  	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" >
   	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 	  
     <!-- Webfonts -->
@@ -123,7 +123,7 @@
 			  <div class="col-lg-6 text-left">
 				<img src="../img/data/NHTSA-white.svg" alt="" height="40"/>
 				</div>
-			  <div class="col-lg-4 text-right">
+			  <div class="col-lg-6 text-right">
 				<img src="../img/data/dcGov.png" alt="" height="50"/>
 				</div>
 			</div>
@@ -134,7 +134,7 @@
 				<h6>National Highway Transportation Safety Administration</h6>
 				</div>
 				
-			  <div class="col-lg-4 text-right">
+			  <div class="col-lg-6 text-right">
 				<h5>Open Data DC</h5>
 				<h6>Government of the District of Columbia</h6>
 				</div>
@@ -142,11 +142,11 @@
 			  
 			<div class="row">
 			  <div class="col-lg-6 text-left">
-				<h5>Uniform Crime Reporting (UCR) DB</h5>
+				<h5>Uniform Crime Reporting (UCR)</h5>
 				<h6>Federal Bureau of Investigations</h6>
 				</div>
 				
-			  <div class="col-lg-4 text-right">
+			  <div class="col-lg-6 text-right">
 				<h5>Fourth Source</h5>
 				<h6>Enter information here</h6>
 				</div>
@@ -167,7 +167,7 @@
 
     <!-- DASHBOARD SECTION -->
     <section id="dashboard" class="dashboard-section content-section text-center">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>Dashboard</h2>
@@ -176,9 +176,9 @@
 	    <div class="row">
 		  
 		  <!-- CHART 1 -->
-		  <div class="col-lg-4 text-left">
+		  <!--<div class="col-lg-4 text-left">-->
 		 	<h5>fatality rates vs. alcohol sales laws on Sunday</h5>
-			  <div class="col s12 m6">
+			  <div class="col-lg-3">
 			    <div class="card"><canvas id="polar-chart" width="600" height="400"></canvas></div>
 			  </div>
 			</div>
@@ -276,7 +276,7 @@
 	<!-- Chart 1 -->		  
 	<script>
 
-	   $.get("http://localhost:5000/sunday", (response) => {
+	   $.get("http://127.0.0.1:5000/sunday", (response) => {
 
 		 let laws = []
 		 let fatalities = []
