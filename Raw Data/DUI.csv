@@ -1,0 +1,51 @@
+State,DUI,Fatalities,Population,Sunday.Sales,Fatality.Rate,DUI.Rate
+Alabama,7863,247,4858979,Prohibited,0.0051%,0.8509%
+Alaska,3163,24,738432,Permitted,0.0066%,0.8391%
+Arizona,22367,272,6828065,Permitted,0.0096%,0.5386%
+Arkansas,6919,149,2978204,Local,0.0028%,0.4685%
+California,141458,914,39144818,Permitted,0.0039%,0.4330%
+Colorado,25562,151,5456574,Permitted,0.0033%,0.4283%
+Connecticut,8148,103,3590886,Local,0.0033%,0.4260%
+Delaware,386,42,945934,Permitted,0.0047%,0.4097%
+Florida,31783,797,20271272,Local,0.0043%,0.4028%
+Georgia,19217,365,10214860,Local,0.0021%,0.3794%
+Hawaii,5250,33,1431603,Permitted,0.0023%,0.3667%
+Idaho,5844,70,1654930,Local,0.0023%,0.3614%
+Illinois,3659,307,12859995,Local,0.0041%,0.3581%
+Indiana,14428,178,6619680,Prohibited,0.0025%,0.3567%
+Iowa,9028,78,3123899,Permitted,0.0074%,0.3557%
+Kansas,7186,84,2911641,Local,0.0042%,0.3531%
+Kentucky,17825,192,4425092,Local,0.0038%,0.3507%
+Louisiana,5598,253,4670724,Local,0.0028%,0.3485%
+Maine,5756,52,1329328,Permitted,0.0021%,0.3435%
+Maryland,17100,160,6006401,Local,0.0026%,0.3425%
+Massachusetts,8258,96,6794422,Local,0.0061%,0.3323%
+Michigan,26845,268,9922576,Local,0.0040%,0.3276%
+Minnesota,20830,115,5489594,Permitted,0.0037%,0.3197%
+Mississippi,6889,175,2992333,Prohibited,0.0027%,0.2950%
+Missouri,19449,224,6083672,Permitted,0.0014%,0.2942%
+Montana,3674,76,1032949,Prohibited,0.0025%,0.2890%
+Nebraska,5348,65,1896190,Local,0.0027%,0.2847%
+Nevada,7612,96,2890845,Local,0.0043%,0.2838%
+New Hampshire,4746,33,1330608,Restricted,0.0034%,0.2820%
+New Jersey,22201,111,8958013,Local,0.0027%,0.2705%
+New Mexico,8542,98,2085109,Local,0.0033%,0.2633%
+New York,28988,311,19795791,Permitted,0.0012%,0.2478%
+North Carolina,35967,411,10042802,Prohibited,0.0029%,0.2468%
+North Dakota,6351,50,756927,Local,0.0039%,0.2463%
+Ohio,34254,313,11613423,Local,0.0018%,0.2453%
+Oklahoma,11101,170,3911338,Prohibited,0.0025%,0.2443%
+Oregon,9019,155,4028977,Permitted,0.0048%,0.2365%
+Pennsylvania,44615,363,12802503,Restricted,0.0050%,0.2323%
+Rhode Island,2591,19,1056298,Permitted,0.0058%,0.2302%
+South Carolina,16272,301,4896146,Prohibited,0.0029%,0.2269%
+South Dakota,7305,44,858469,Local,0.0038%,0.2239%
+Tennessee,23150,251,6600299,Prohibited,0.0027%,0.2180%
+Texas,64971,1323,27469114,Prohibited,0.0036%,0.1881%
+Utah,8813,43,2995919,Prohibited,0.0051%,0.1618%
+Vermont,2144,16,626042,Permitted,0.0039%,0.1568%
+Virginia,20477,208,8382993,Restricted,0.0016%,0.1464%
+Washington,24627,147,7170351,Permitted,0.0014%,0.1215%
+West Virginia,4543,71,1844128,Prohibited,0.0054%,0.1199%
+Wisconsin,24588,189,5771337,Permitted,0.0044%,0.0408%
+Wyoming,3157,56,586107,Permitted,0.0024%,0.0285%

@@ -1,0 +1,294 @@
+body {
+	font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+	position:relative;
+	width:100%;
+	height:100%;
+	color:#fff;
+	background-color:#0b2027; /*dark jungle green*/
+}
+html {
+	width:100%;
+	height:100%
+}
+h1 {
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin:50px 0 50px;
+	letter-spacing:10px;
+	text-transform:uppercase
+}
+h2 {
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin:0px 0 50px;
+	letter-spacing:10px;
+	text-transform:uppercase
+}
+h3 {
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin:25px 0 35px;
+	letter-spacing:1px;
+	text-transform:lowercase
+}
+h4 {
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin:25px 0 35px;
+	letter-spacing:1px;
+	text-transform:lowercase
+}
+h5 {
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight:500;
+	margin:25px 0 0;
+	letter-spacing:1px;
+	text-transform:lowercase
+}
+h6 {
+	font-size:12px;
+	line-height:1.5;
+	margin:0 0 25px
+}
+p {
+	font-size:16px;
+	line-height:1.5;
+	margin:0 0 25px
+}
+@media (min-width:768px){
+	p{
+		font-size:16px;
+		line-height:1.6;
+		margin:0 0 25px
+	}
+}
+a {
+	-moz-transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	color:#fff   
+}
+a:focus,a:hover {
+	text-decoration:none;
+	color:#E63946
+}
+#mainNav{
+	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	font-size:12px;
+	font-weight:500;
+	margin-bottom:0;
+	color:#e0ff4f;  		/*maximum green yellow*/
+	text-transform:uppercase;
+	background-color:rgb(255,255,255,.8)
+}
+#mainNav .navbar-toggler{
+	font-size:12px;
+	/*padding:10px;*/
+	color:#e0ff4f; 			/*maximum green yellow*/
+}
+#mainNav .navbar-brand{
+	font-weight:200
+}
+#mainNav a{
+	color:#e0ff4f;  		/*maximum green yellow*/
+}
+#mainNav .navbar-nav .nav-item{
+	-moz-transition:background .3s ease-in-out;
+	-webkit-transition:background .3s ease-in-out;	
+	transition:background .3s ease-in-out
+}
+#mainNav .navbar-nav .nav-item:hover{
+	color:fade(white,80%);
+	outline:0;
+	background-color:transparent
+}
+#mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
+	/*color:fade(white,80%);*/
+	/*outline:0;*/
+	background-color:transparent
+}
+
+@media (min-width:992px){
+	#mainNav{
+		padding-top:20px;
+		padding-bottom:20px;
+		-webkit-transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;
+		-moz-transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;
+		transition:background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;
+		letter-spacing:1px;
+		border-bottom:none;
+	}
+	#mainNav.navbar-shrink{
+		padding-top:10px;
+		padding-bottom:10px;
+		border-bottom:0px solid rgba(255,255,255,.8);
+	}
+	#mainNav .nav-link.active{
+		outline:0;background-color:rgba(255,255,255,.8)
+	}
+	#mainNav .nav-link.active:hover{
+		color:#E63946
+	}
+}  
+
+.masthead{
+	display:table;
+	width:100%;
+	height:auto;
+	padding:200px 0;
+	text-align:center;
+	color:#fff;
+	background:url(../img/main3-bg.jpg) no-repeat bottom center scroll;
+	background-color:#000;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+.masthead .intro-body{
+	display:table-cell;
+	vertical-align:middle
+}
+.masthead .intro-body .brand-heading{
+	font-size:20px    /*title*/
+}
+.masthead .intro-body .intro-text{
+	font-size:14px
+}
+@media (min-width:768px){
+		.masthead{
+			height:100%;
+			padding:0
+	}
+	.masthead .intro-body .brand-heading{
+		font-size:50px               
+	}  
+	.masthead .intro-body .intro-text{
+		font-size:18px
+	} 
+} 
+.btn-circle{
+	font-size:20px;
+	width:55px;
+	height:55px;
+	margin-top:15px;
+	line-height:45px;
+	-moz-transition:background .3s ease-in-out;
+	-webkit-transition:background .3s ease-in-out;
+	transition:background .3s ease-in-out;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius:100%!important;
+	background:0 0
+}
+.btn-circle:focus,.btn-circle:hover{
+	color:#fff;
+	outline:0;
+	background:rgba(255,255,255,.1)
+}
+
+.content-section{
+	padding-top:50px;
+	padding-bottom:100px
+}
+
+.team-section{
+	height:auto;
+	color:#fff;
+	background-color:#164251;   /*teal*/
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+.topic-section{
+	height:auto;
+	color:#fff;
+	background:url(../img/topic2-bg.jpg) no-repeat center center scroll;
+	background-color:#000;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+
+.data-section{
+	color:#fff;
+	background-color:#333;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+
+.dashboard-section{
+	color:#000;
+	background-color:#fff;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+
+.btn{
+	font-family:'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight:300;
+	margin-top:15px;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+	text-transform:lowercase;
+	border-radius:0
+}
+.btn-default{
+	color:#fff;   
+	/*border:1px solid #fff;*/
+	background-color:transparent
+}
+.btn-default:focus,.btn-default:hover{
+	color:#E63946;   /*red*/
+	/*border:1px solid #fff;*/
+	outline:0;
+	background-color:transparent
+}
+ul.banner-social-buttons{
+	margin-top:0
+}
+/* @media (max-width:1199px){
+	ul.banner-social-buttons{
+		margin-top:15px
+	}
+}
+@media (max-width:767px){
+	ul.banner-social-buttons li{
+		display:block;
+		margin-bottom:20px;
+		padding:0
+	}
+	ul.banner-social-buttons li:last-child{
+		margin-bottom:0
+	}
+} */
+footer{
+	padding:50px 0
+}
+footer p{
+	font-size:14px;
+	margin:0
+}
+::-moz-selection{
+	background:#fcfcfc;
+	background:rgba(255,255,255,.2);
+	text-shadow:none
+}
+::selection{
+	background:#fcfcfc;
+	background:rgba(255,255,255,.2);
+	text-shadow:none
+}
+img::selection{
+	background:0 0
+}
+img::-moz-selection{
+	background:0 0
+}
