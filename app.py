@@ -118,9 +118,10 @@ def police_data():
         police_data["Police"] = result[1]
         police_data["Fatalities"] = result[2]
         police_data["DUI"] = result[3]
-
-    return jsonify(results)
-
+    
+    df = pd.DataFrame(results, columns=['State', 'Police', 'Fatalities', 'DUI'])
+    
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/sunday")
 def sunday_data():
