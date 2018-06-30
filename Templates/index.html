@@ -215,7 +215,7 @@
 	  <div class="card mb-3">
         <div class="card-header">
 	      <div class="card-body">
-            <canvas id="police" width="600" height="400"></canvas>
+            <canvas id="bubble-chart" width="600" height="400"></canvas>
           </div>
         </div>
       </div>
@@ -228,7 +228,7 @@
       <div class="card mb-3">
 	    <div class="card-header">
           <div class="card-body">
-            <canvas id="sunday" width="600" height="400"></canvas>
+            <canvas id="polar-chart" width="600" height="400"></canvas>
 		  </div>
         </div>
       </div>
@@ -343,7 +343,7 @@ buildPlot();
        fatalities.push(item[1])
      })
 
-     new Chart(document.getElementById("sunday"), {
+     new Chart(document.getElementById("polar-chart"), {
         type: 'polarArea',
         data: {
           labels: laws,
@@ -379,7 +379,7 @@ buildPlot();
         return color;
       }
 
-      new Chart(document.getElementById("police"), {
+      new Chart(document.getElementById("bubble-chart"), {
           type: 'bubble',
           data: {
             datasets: response.map(item => {
@@ -418,8 +418,9 @@ buildPlot();
       })
     })
   </script>
-			 
-<svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0; fill: black;"></path></svg>
+
+	<!--
+<svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0; fill: black;"></path></svg>-->
 
 </body>
 </html>
