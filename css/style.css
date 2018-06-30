@@ -4,7 +4,7 @@ body {
 	width:100%;
 	height:100%;
 	color:#fff;
-	background-color:#0b2027; /*dark jungle green*/
+	background-color:transparent; 
 }
 
 html {
@@ -31,15 +31,15 @@ h2 {
 h3 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
-	margin:25px 0 35px;
-	letter-spacing:1px;
-	text-transform:lowercase
+	margin:25px 0 25px;
+	letter-spacing:5px;
+
 }
 
 h4 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
-	margin:25px 0 35px;
+	margin:25px 0 25px;
 	letter-spacing:1px;
 	text-transform:lowercase
 }
@@ -47,18 +47,18 @@ h4 {
 h5 {
 	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-weight:500;
-	margin:25px 0 0;
+	margin:25px 0 5px;
 	letter-spacing:1px;
 	text-transform:lowercase
 }
 
 h6 {
-	font-size:12px;
+	font-size:18px;
 	line-height:1.5;
-	margin:0 0 25px
+	margin:0 0 0
 }
 p {
-	font-size:16px;
+	font-size:14px;
 	line-height:1.5;
 	margin:0 0 25px
 }
@@ -67,7 +67,7 @@ a {
 	-moz-transition:all .2s ease-in-out;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
-	color:#fff   
+	color:#606060
 }
 
 a:focus,a:hover {
@@ -78,24 +78,25 @@ a:focus,a:hover {
 #mainNav{
 	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 	font-size:12px;
+	letter-spacing:25;
 	font-weight:500;
 	margin-bottom:0;
-	color:#e0ff4f;  			/*maximum green yellow*/
+	color:#ffffff;  				
 	text-transform:uppercase;
 	background-color:rgb(255,255,255,.8)
 }
-/*#mainNav .navbar-toggler{
-	font-size:12px;
-	padding:10px;
-	color:#e0ff4f;			
-}*/
+
+#mainNav .navbar-toggler{
+	font-size:16px;
+	color:#ffffff;			
+}
 
 #mainNav .navbar-brand{
 	font-weight:200
 }
 
 #mainNav a{
-	color:#e0ff4f;  			/*maximum green yellow*/
+	color:transparent;  			
 }
 
 #mainNav .navbar-nav .nav-item{
@@ -105,13 +106,13 @@ a:focus,a:hover {
 }
 
 #mainNav .navbar-nav .nav-item:hover{
-	color:fade(white,50%);
+	color:#333333;
 	outline:0;
 	background-color:transparent
 }
 
 #mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
-	/*color:fade(white,80%);*/
+	color:transparent;
 	/*outline:0;*/
 	background-color:transparent
 }
@@ -139,6 +140,30 @@ a:focus,a:hover {
 	}
 }*/
 
+.card{
+	border:#ccc;
+}
+
+.card-body{
+	margin:0 0 
+
+}
+
+.card-title{
+	font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-color:#999999;
+	font-weight:500;
+	letter-spacing:1px;
+	text-transform:lowercase
+}
+
+.card-text{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size:8px;
+
+}
+
+
 .masthead{
 	display:table;
 	width:100%;
@@ -153,13 +178,16 @@ a:focus,a:hover {
 	-o-background-size:cover;
 	background-size:cover
 }
+
 .masthead .intro-body{
 	display:table-cell;
 	vertical-align:middle
 }
+
 .masthead .intro-body .brand-heading{
 	font-size:50px    /*title*/
 }
+
 .masthead .intro-body .intro-text{
 	font-size:18px
 }
@@ -179,8 +207,8 @@ a:focus,a:hover {
 
 .btn-circle{
 	font-size:20px;
-	width:55px;
-	height:55px;
+	width:50px;
+	height:50px;
 	margin-top:15px;
 	line-height:45px;
 	-moz-transition:background .3s ease-in-out;
@@ -200,7 +228,7 @@ a:focus,a:hover {
 
 .content-section{
 	padding-top:50px;
-	padding-bottom:100px
+	padding-bottom:50px
 }
 
 .team-section{
@@ -242,10 +270,19 @@ a:focus,a:hover {
 	background-size:cover
 }
 
+.dash-section{
+	color:#000;
+	background-color:#fff;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+
 .btn{
 	font-family:'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-weight:300;
-	margin-top:15px;
+	
 	-webkit-transition:all .3s ease-in-out;
 	-moz-transition:all .3s ease-in-out;
 	transition:all .3s ease-in-out;
@@ -260,7 +297,7 @@ a:focus,a:hover {
 }
 
 .btn-default:focus,.btn-default:hover{
-	color:#E63946;   /*red*/
+	color:#fff;  
 	/*border:1px solid #fff;*/
 	outline:0;
 	background-color:transparent
@@ -286,8 +323,11 @@ ul.banner-social-buttons{
 	}
 } */
 
+
+
 footer{
-	padding:50px 0
+	padding:25px 0 25px;
+	background-color:#0b2027; /*dark jungle green*/
 }
 
 footer p{
