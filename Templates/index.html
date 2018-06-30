@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	  
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="group3-project2" content="">
 	<meta name="hasher-vonseggern-mathur-minier" content="">
 	<title>policy dashboard</title>
-	  
+
     <!-- Bootstrap -->
-    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet"/>
 
 	<!--D3 cdn-->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
@@ -19,25 +19,25 @@
   	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <!-- Webfonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-	  
+
 	<!-- CSS -->
-    <link href="../css/style.css" rel="stylesheet">
-	  
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
+
   </head>
-  
+
 <body id="page-top">
-	  
+
 <!--NAVIGATION BAR -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-		
+
 	  <div class="container">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
-		  
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
@@ -49,7 +49,7 @@
       </div>
     </nav>
 
-	
+
 <!--HOME SECTION -->
     <header class="masthead">
       <div class="intro-body">
@@ -69,22 +69,22 @@
 	  </div>
     </header>
 
-	
+
 <!--TEAM SECTION -->
     <section id="team" class="team-section content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Team</h2>
-			  
+
 			<div class="row">
 			  <div class="col-lg-6">
-				<img src="../img/icons/graph.png" width="77" height="77" alt=""/>
+				<img src="{{ url_for('static', filename='img/icons/graph.png') }}" width="77" height="77" alt=""/>
 				  <h3>Analytics</h3>
 				  <h6>Matiullah Hasher<br>JT von Seggern</h6>
 			  </div>
 			  <div class="col-lg-6">
-				<img src="../img/icons/bar-chart.png" width="77" height="77" alt=""/>
+                <img src="{{ url_for('static', filename='img/icons/bar-chart.png') }}" width="77" height="77" alt=""/>
 				  <h3>Visualization</h3>
 				  <h6>Malvika Mathur<br>Marie Minier</h6>
 			  </div>
@@ -99,7 +99,7 @@
 	  </div>
     </section>
 
-	  
+
 <!--TOPIC SECTION -->
     <section id="topic" class="topic-section content-section">
       <div class="container">
@@ -109,13 +109,13 @@
 
 		  <div class="row">
 		    <div class="col-lg-3">
-				<img src="../img/icons/police-badge.png" width="60" height="60" alt=""/>
+                <img src="{{ url_for('static', filename='img/icons/police-badge.png') }}" width="77" height="77" alt=""/>
 			  <h4>Increase law enforcement workforce?</h4></div>
-		    <div class="col-lg-3">	
-				<img src="../img/icons/no-alcohol.png" width="60" height="60" alt=""/>
-			  <h4>Prohibit alcohol sales on Sundays?</h4></div>    
-		    <div class="col-lg-3">	
-				<img src="../img/icons/24-hours.png" width="60" height="60" alt=""/>
+		    <div class="col-lg-3">
+                <img src="{{ url_for('static', filename='img/icons/no-alcohol.png') }}" width="77" height="77" alt=""/>
+			  <h4>Prohibit alcohol sales on Sundays?</h4></div>
+		    <div class="col-lg-3">
+                <img src="{{ url_for('static', filename='img/icons/24-hours.png') }}" width="77" height="77" alt=""/>
 			  <h4>Extend public transit available hours?</h4></div>
 	      </div>
           </div>
@@ -127,21 +127,21 @@
 		</div>
 	  </div>
     </section>
-	  
-	  
+
+
 <!--DATA SECTION -->
     <section id="data" class="data-section content-section text-center">
-      <div class="container">		
+      <div class="container">
 		<div class="row">
           <div class="col-lg-10 mx-auto">
           <h2>Data</h2>
-			  
+
 			<div class="row">
 			  <div class="col-lg-6 text-left">
-				<img src="../img/data/NHTSA-white.svg" alt="" height="40"/>
+                <img src="{{ url_for('static', filename='img/data/NHTSA-white.svg') }}" width="77" height="77" alt=""/>
 				</div>
 			  <div class="col-lg-6 text-right">
-				<img src="../img/data/dcGov.png" alt="" height="50"/>
+                <img src="{{ url_for('static', filename='img/data/dcGov.png') }}" width="77" height="77" alt=""/>
 				</div>
 			</div>
 
@@ -150,19 +150,19 @@
 				<h5>Fatality Analysis Reporting System (FARS)</h5>
 				<p>National Highway Transportation Safety Administration</p>
 				</div>
-				
+
 			  <div class="col-lg-6 text-right">
 				<h5>Open Data DC</h5>
 				<p>Government of the District of Columbia</p>
 				</div>
 			</div>
-			  
+
 			<div class="row">
 			  <div class="col-lg-6 text-left">
 				<h5>Uniform Crime Reporting (UCR)</h5>
 				<p>Federal Bureau of Investigations</p>
 				</div>
-				
+
 			  <div class="col-lg-6 text-right">
 				<h5>Data.gov</h5>
 				  <p></p>
@@ -170,7 +170,7 @@
 			</div>
 
 
-			  
+
 		  </div>
 		</div>
 		  <div class="col-lg-8 mx-auto content-section">
@@ -193,7 +193,7 @@
 
 	<!-- <div class="container text-left"> -->
 
-			
+
 <!-- CHART 1: DC METRO (PLOTLY)-->
 <div class="row">
     <h5 class="text-left">DC Vehicle Crash Rates (2016)</h5>
@@ -206,7 +206,7 @@
 	<!--</div>
   </div>
 </div>-->
-	  
+
 <div class="row">
 
 <!-- CHART 2: LAW ENFORCEMENT (CHARTS.JS/BUBBLE)-->
@@ -220,8 +220,8 @@
         </div>
       </div>
     </div>
-  
-	  
+
+
 <!-- CHART 3: SUNDAY SALES (CHARTS.JS/POLAR)-->
   <div class="col-lg-6">
 	<h5 class="text-left">Sunday Sales of Alcohol</h5>
@@ -235,7 +235,7 @@
     </div>
   </div>
 </section>
-	
+
 
 <!-- PAGE FOOTER -->
     <footer>
@@ -249,21 +249,21 @@
       </div>
     </footer>
 
-	  
+
     <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			
+
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 
 <!-- Plugin JavaScript -->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
     <!-- Scripts -->
-    <script src="../js/grayscale.min.js"></script>
+    <script src="{{ url_for('static', filename='js/grayscale.min.js') }}"></script>
 	<script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
-		  
+
   	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   	<script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -273,7 +273,7 @@
   	<!-- Plotly & Crashes.js -->
   	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   	<script src="{{ url_for('static', filename='app.js') }}"></script>
-  	
+
 	<!-- Chart.js Import -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
@@ -329,8 +329,8 @@ function buildPlot() {
 buildPlot();
 </script>
 
-			
-<!--POLAR CHART -->		  
+
+<!--POLAR CHART -->
 <script>
 
    $.get("http://127.0.0.1:5000/sunday", (response) => {
@@ -364,11 +364,13 @@ buildPlot();
     })
   })
   </script>
-			
+
 <!--BUBBLE CHART -->
 	<script>
 
     $.get("http://127.0.0.1:5000/police", (response) => {
+
+        console.log('response', response)
 
       function getRandomColor() {
         var letters = '0123456789ABCDEF';
@@ -385,13 +387,13 @@ buildPlot();
             datasets: response.map(item => {
               var color = getRandomColor()
               return {
-                label: item[0],
+                label: item.State,
                 backgroundColor: color+'20',
                 borderColor: color,
                 data: [{
-                  x: item[1],
-                  y: item[2],
-                  r: item[3]
+                  x: item.Police,
+                  y: item.Fatalities,
+                  r: item.DUI
                 }]
               }
             })
@@ -400,7 +402,11 @@ buildPlot();
               title: {
                   display: true,
                   text: 'DUI per Capita per state'
-              }, scales: {
+              },
+              legend: {
+                display: false
+            },
+              scales: {
                   yAxes: [{
                       scaleLabel: {
                           display: true,
@@ -418,9 +424,6 @@ buildPlot();
       })
     })
   </script>
-
-	<!--
-<svg id="js-plotly-tester" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; left: -10000px; top: -10000px; width: 9000px; height: 9000px; z-index: 1;"><path class="js-reference-point" d="M0,0H1V1H0Z" style="stroke-width: 0; fill: black;"></path></svg>-->
 
 </body>
 </html>
